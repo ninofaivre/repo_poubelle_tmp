@@ -42,6 +42,11 @@ window.logout = async function ()
 	document.location.href = '/index.html'
 }
 
+window.findAGame = async function ()
+{
+	document.location.href = '/game.html'
+}
+
 async function populateDiscussion(index)
 {
 	console.log("populate discussion")

@@ -5,6 +5,7 @@ import { ServeStaticModule } from '@nestjs/serve-static'
 import { AuthModule } from './auth/auth.module'
 import { join } from 'path'
 import { MessagesModule } from './messages/messages.module';
+import { GameModule } from './game/game.module';
 
 @Module({
 	imports:
@@ -15,7 +16,8 @@ import { MessagesModule } from './messages/messages.module';
 			exclude: ['/api*'],
 		}),
 		AuthModule,
-		MessagesModule
+		MessagesModule,
+		GameModule
 	],
 	controllers: [AppController],
 	providers: [AppService],
